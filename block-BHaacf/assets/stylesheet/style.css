@@ -1,0 +1,599 @@
+/* Variables */
+
+:root {
+  --primary: #ed563a;
+  --overlay: #2d3944;
+  --header-bg: lightgrey;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom Styles */
+
+/* General */
+*,
+* ::before,
+* ::after {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+}
+a {
+  text-decoration: none;
+}
+.orange {
+  color: var(--primary);
+}
+.text-center {
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container-small {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-75 {
+  flex: 0 1 75%;
+}
+.flex-61 {
+  flex: 0 1 61%;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-48 {
+  flex: 0 1 48%;
+}
+.flex-35 {
+  flex: 0 1 35%;
+}
+.flex-31 {
+  flex: 0 1 31%;
+}
+.flex-25 {
+  flex: 0 1 25%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Font-0 */
+.font-0 {
+  font-size: 0;
+}
+
+/* Padding */
+.padding {
+  padding: 80px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary);
+  border: 1px solid transparent;
+}
+.btn-primary {
+  margin-left: 24px;
+}
+.btn:hover {
+  color: var(--primary);
+  background-color: white;
+  border: 1px solid var(--primary);
+}
+
+/* Header and Fonts */
+.heading {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 0 150px;
+  color: #757474;
+}
+
+/* Section Header */
+.section-header {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+/* Clearfix */
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}
+
+/* Header */
+.header {
+  background-color: rgba(211, 211, 211, 0.27);
+  padding: 18px 0;
+  position: absolute;
+  z-index: 1;
+  width: 93.8%;
+}
+.brand-logo {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+}
+.nav-menu-item {
+  font-size: 12px;
+  color: white;
+  margin-left: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav-menu a:hover {
+  color: var(--primary);
+}
+.active {
+  color: var(--primary);
+}
+
+/* Hero */
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+.hero h5 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.hero-text-overlay {
+  position: absolute;
+  left: 25%;
+  top: 45%;
+  padding-top: 240px;
+}
+#hero-video {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(14, 14, 14, 0.5);
+}
+
+/* Programs */
+.programs {
+  background-color: white;
+}
+.programs .heading {
+  color: black;
+  font-weight: 800;
+}
+.programs img {
+  margin-bottom: 8px;
+}
+.program-list {
+  align-self: flex-start;
+  margin-left: 10px;
+}
+.program-item img {
+  width: 85%;
+}
+.program-list .heading {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.program-list p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #757474;
+}
+.program-list a {
+  font-size: 12px;
+  color: var(--primary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.program-list a:hover {
+  color: var(--secondary);
+}
+.icon {
+  width: 100%;
+}
+.program-item {
+  margin-bottom: 24px;
+}
+
+/* Start*/
+.start {
+  background: url("../media/cta-bg.jpg");
+}
+.start h2 {
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+.start .text {
+  margin-bottom: 32px;
+  color: white;
+}
+
+/* Our Classes */
+.classes {
+  background-color: white;
+}
+.classes .heading {
+  color: black;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+.classes .text {
+  margin-bottom: 8px;
+}
+.classes img {
+  margin-bottom: 16px;
+}
+.training-class .text {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  color: #757474;
+}
+.training-class img {
+  width: 100%;
+  border-radius: 8px;
+}
+.training-class .heading {
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.classes-info {
+  box-shadow: 0px 1px 3px lightgrey;
+  padding: 5px;
+  margin-bottom: 12px;
+}
+.classes-info img {
+  vertical-align: middle;
+  padding: 24px 8px 8px 24px;
+  margin-bottom: 12px;
+}
+.classes-info a {
+  color: black;
+  font-weight: 600;
+  margin-left: 12px;
+  padding: 12px 32px 12px 0px;
+}
+.classes-info {
+  width: 100%;
+}
+.schedules-button .btn {
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 16px 24px;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.classes-info a:hover {
+  color: var(--primary);
+}
+.classes-menu .active {
+  color: var(--primary);
+}
+
+/* Schedule */
+.schedule {
+  background: url("../media/schedule-bg.jpg");
+}
+.schedule .text {
+  color: white;
+  font-weight: 300;
+  margin-bottom: 56px;
+}
+.schedule img {
+  margin-bottom: 8px;
+}
+.schedule .days a {
+  margin-right: 12px;
+  color: white;
+  font-size: 12px;
+}
+.schedule .days a:hover {
+  color: var(--primary);
+}
+caption .days .active {
+  color: var(--primary);
+}
+.schedule .days p {
+  margin-right: 12px;
+  color: white;
+}
+table {
+  border: 1px solid white;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+td,
+th {
+  border: 1px solid white;
+  padding: 38px 44px;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+caption {
+  margin-bottom: 44px;
+}
+
+/* Expert Trainers */
+.experts {
+  background-color: white;
+}
+.experts h4 {
+  color: black;
+}
+.experts img {
+  margin-bottom: 12px;
+}
+.experts-list {
+  padding: 32px;
+  box-shadow: 0px 3px 10px lightgrey;
+}
+.experts-list img {
+  width: 100%;
+}
+.experts-list h5 {
+  color: var(--primary);
+  font-size: 12px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+.experts-list .heading {
+  color: black;
+  font-size: 16px;
+}
+.experts-list p {
+  font-size: 12px;
+  color: #757474;
+  margin-bottom: 8px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+.experts-list i {
+  color: black;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  font-size: 12px;
+}
+
+/* Contact */
+.contact {
+}
+.form {
+  background: url("../media/contact-bg.jpg");
+}
+form {
+  background-color: white;
+  padding: 32px;
+  margin: 44px;
+}
+.contact .form-control {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: #757474;
+  font-size: 12px;
+  border: 1px solid #757474;
+}
+.form-control:focus {
+  outline: 0;
+}
+.form .btn {
+  margin-top: 4px;
+  padding: 12px 24px;
+}
+
+/* Footer  */
+.footer {
+  background-color: white;
+  padding: 24px;
+}
+small {
+  color: #757474;
+  font-size: 12px;
+  font-weight: 300;
+}
