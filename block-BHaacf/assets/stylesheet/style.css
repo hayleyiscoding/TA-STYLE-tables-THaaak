@@ -181,14 +181,17 @@ a {
   display: flex;
   flex-direction: column;
 }
-.flex-48 {
-  flex: 0 1 48%;
-}
-.flex-25 {
-  flex: 0 1 25%;
-}
 .flex-75 {
   flex: 0 1 75%;
+}
+.flex-61 {
+  flex: 0 1 61%;
+}
+.flex-50 {
+  flex: 0 1 50%;
+}
+.flex-48 {
+  flex: 0 1 48%;
 }
 .flex-35 {
   flex: 0 1 35%;
@@ -196,11 +199,8 @@ a {
 .flex-31 {
   flex: 0 1 31%;
 }
-.flex-50 {
-  flex: 0 1 50%;
-}
-.flex-61 {
-  flex: 0 1 61%;
+.flex-25 {
+  flex: 0 1 25%;
 }
 .wrap {
   flex-wrap: wrap;
@@ -469,9 +469,6 @@ a {
 .classes-info a:hover {
   color: var(--primary);
 }
-.classes-info a:active {
-  color: var(--primary);
-}
 .classes-menu .active {
   color: var(--primary);
 }
@@ -496,7 +493,7 @@ a {
 .schedule .days a:hover {
   color: var(--primary);
 }
-.schedule .days a:active {
+caption .days .active {
   color: var(--primary);
 }
 .schedule .days p {
